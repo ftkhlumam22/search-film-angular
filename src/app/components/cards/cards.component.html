@@ -1,0 +1,19 @@
+<div
+  class="card mx-4 mt-4"
+  style="width: 12rem"
+  routerLink="/detail-film/{{ movieData.imdbID }}"
+>
+  <img [src]="movieData.Poster" class="card-img-top" alt="Poster" />
+  <div class="card-body" style="margin-bottom: -10px">
+    <h1 style="font-size: 0.9rem">{{ movieData.Title }}</h1>
+    <p class="fw-light my-1" style="font-size: 0.7rem">{{ movieData.Year }}</p>
+    <div class="d-flex justify-content-end">
+      <p
+        class="fw-semibold my-1 text-center bg-secondary rounded-1 text-white"
+        style="font-size: 0.7rem; width: 50px"
+      >
+        {{ movieData.Type }}
+      </p>
+    </div>
+  </div>
+</div>
